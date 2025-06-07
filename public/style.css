@@ -1,0 +1,572 @@
+/* Prevents scrolling */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.my-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.my-image:hover {
+    transform: scale(1.05);
+}
+
+.main-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/videos/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+/* Main container */
+#main-container {
+    background-color: #20204693;
+    max-width: 1280px;
+    height: 98vh !important;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    margin-top: 6px;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(20px);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Container Styling */
+#left-sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.215)
+}
+
+.left-side-header {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.215);
+    cursor: pointer;
+    margin-left: 1rem;
+    gap: 1rem;
+}
+
+/* Button Styling */
+.button-mac {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff5f57;
+    cursor: pointer;
+}
+
+.button-mac .button-icon {
+    display: none;
+}
+
+.button-mac:hover .button-icon {
+    display: block;
+}
+
+/* Button Colors */
+.yellow-button {
+    background-color: #ffbd2e;
+}
+
+.green-button {
+    background-color: #28c940;
+}
+
+/* Button Icon */
+.button-icon {
+    width: 8px;
+    height: 8px;
+}
+
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-body a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 0;
+}
+
+.subitem-icons {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 700px) {
+    #left-sidebar {
+        width: 50px;
+        overflow: hidden;
+    }
+
+    .accordion-body a {
+        font-size: 14px;
+    }
+
+    .subitem-icons {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+/* Custom Styling */
+#right-side-header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.215);
+}
+
+#right-side-main {
+    width: 100%;
+    margin-right: 5px;
+    height: calc(95vh - 60px);
+    overflow-y: scroll;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Hide scrollbar but keep content scrollable */
+#right-side-main::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.my-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+#about {
+    padding: 10px;
+    border-radius: 1.5rem;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradientAnimation 15s ease infinite;
+    background-size: 400% 400%;
+    display: flex;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.about-image {
+    max-width: 100%;
+    max-height: 230px;
+    height: auto;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content-button {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradientAnimation 15s ease infinite;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: 400% 400%;
+    color: rgb(246, 255, 0);
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none !important;
+}
+
+.content-button:hover {
+    background: linear-gradient(-45deg, #4e4545, #1e1e2f, #3a3a6b, #262643);
+    animation: gradientAnimation 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+.skill-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.box-container {
+    padding: 20px 0;
+}
+
+#skills {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#skills h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#skills .text-center {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #512655;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.548);
+    transition: transform 0.3s ease-in-out;
+}
+
+#skills .text-center:hover {
+    transform: translateY(-5px);
+}
+
+#skills .img-fluid {
+    width: 60px;
+    height: auto;
+}
+
+#skills p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fefefe;
+    margin-top: 10px;
+}
+
+#Project-container {
+    width: 96%;
+    margin-left: 20px;
+}
+
+#carouselExampleCaptions {
+    height: 400px !important;
+    border-radius: 15px;
+}
+
+#carouselExampleCaptions .carousel-item img {
+    object-fit: cover;
+    mix-blend-mode: darken;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+#carouselExampleCaptions .carousel-inner {
+    height: 100%;
+    border-radius: 15px;
+}
+
+#carouselExampleCaptions .carousel-item {
+    height: 100%;
+    border-radius: 15px;
+}
+
+video {
+    object-fit: cover;
+    mix-blend-mode: darken;
+    border-radius: 15px;
+}
+
+#bg-video {
+    object-fit: fill;
+    mix-blend-mode: normal;
+    height: 200px;
+    border-radius: 0%;
+}
+
+.box-container {
+    padding: 40px !important;
+    background-color: #42152288;
+    border-radius: 30px;
+}
+
+.box-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.items-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.uni-items p {
+    margin: 0;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.uni-date {
+    color: #f7f7f7;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    background: url(./assets/videos/background.png) !important;
+    background-blend-mode: darken !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #444;
+}
+
+.modal-content {
+    border-radius: 1rem;
+}
+
+
+section.card {
+    background: #f6f6f6;
+    border-radius: 24px 24px 24px 48px;
+    padding: 48px 48px 48px 400px;
+    margin: 84px 0;
+    width: 60vw;
+    min-width: 640px;
+    max-width: 920px;
+
+    display: flex;
+    position: relative;
+    box-shadow: 5px 0 0 0 rgba(204, 204, 204, 0.3), -5px 0 0 0 rgba(204, 204, 204, 0.3), 0 5px 0 0 rgba(204, 204, 204, 0.3);
+
+    .text-content {
+        width: calc(60vw - 256px);
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            margin: 0 0 16px 0;
+            font-size: 1.5em;
+            max-width: 20ch;
+        }
+
+        p {
+            margin-bottom: 24px;
+            max-width: 36ch;
+        }
+
+        a {
+            display: inline-block;
+            border: 3px solid black;
+            color: black;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background-color 0.4s, color 0.4s;
+            margin-right: 10px;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    .visual {
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        border-radius: 24px;
+        box-shadow: 1px 2px 6px rgba(255, 255, 255, 0.25), 2px 6px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .visual video {
+        width: 100%;
+        height: 300px;
+        display: block;
+        border-radius: 24px;
+        object-fit: fill;
+    }
+
+    /* Odd cards layout (flip sides) */
+    &:nth-of-type(odd) {
+        padding: 48px 400px 48px 48px;
+        border-radius: 24px 24px 48px 24px;
+
+        .visual {
+            right: 24px;
+            left: auto;
+        }
+
+        .text-content a {
+            align-self: flex-start;
+        }
+    }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1100px) {
+    section.card {
+        width: 100%;
+        padding: 48px 48px 48px 48px;
+        margin: 40px 0;
+
+        .visual {
+            position: relative;
+            width: 100%;
+            height: auto;
+            top: auto;
+            left: auto;
+            right: auto;
+            border-radius: 24px;
+            margin-bottom: 24px;
+        }
+
+        &:nth-of-type(odd) .visual {
+            right: auto;
+            left: auto;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    section.card {
+        flex-direction: column;
+        padding: 48px 24px;
+
+        .text-content {
+            width: 100%;
+        }
+
+        .visual {
+            width: 100%;
+            height: auto;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        p,
+        a {
+            font-size: 0.9em;
+        }
+    }
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal .left-section {
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+}
+
+.modal .social-icons a {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.modal .social-icons a:hover {
+    color: #000000;
+    transform: scale(1.2);
+}
+
+.modal .btn-success {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.modal .btn-success:hover {
+    background-color: #084ec1;
+}
+
+.modal .right-image img {
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
+
+.modal .right-image:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .modal .right-image {
+        display: none !important;
+    }
+}
+
+.card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}

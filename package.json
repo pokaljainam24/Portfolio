@@ -1,0 +1,34 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Welcome to my iMac-inspired developer portfolio! This project showcases my skills, experience, and projects inside a sleek, desktop-style user interface that mimics the macOS environment.",
+  "homepage": "https://github.com/pokaljainam24/My-New-Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/pokaljainam24/My-New-Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pokaljainam24/My-New-Portfolio.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "nodemailer": "^7.0.3",
+    "nodemon": "^3.1.10",
+    "sweetalert": "^2.1.2",
+    "toastify-js": "^1.12.0"
+  }
+}

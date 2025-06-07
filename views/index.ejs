@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal WebSite - Jainam Pokal</title>
+
+    <link rel="icon" href="/images/My.png">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- aos animation css -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="main-background">
+        <video autoplay loop muted>
+            <source width="320" height="240" src="/assets/videos/background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container" id="main-container">
+        <!-- Left Side Section -->
+        <div id="left-sidebar">
+            <div class="left-side-header">
+                <div class="button-mac">
+                    <img src="/assets/images/close-icon.png" class="button-icon" alt="Close">
+                </div>
+                <div class="button-mac yellow-button">
+                    <img src="/assets/images/subtract-icon.png" class="button-icon" alt="Minimize">
+                </div>
+                <div class="button-mac green-button">
+                    <img src="/assets/images/full-screen-icon.png" class="button-icon" alt="Full Screen">
+                </div>
+            </div>
+
+            <div class="container mt-4" id="mainAccordion">
+                <!-- Categories Section -->
+                <div class="accordion-item mx-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#categories">
+                            Categories
+                        </button>
+                    </h2>
+
+                    <div id="categories" class="accordion-collapse collapse show mt-3 p-2"
+                        data-bs-parent="#mainAccordion">
+                        <div class="accordion-body d-flex flex-column gap-2">
+                            <a href="#about" class="d-flex gap-4"><img src="assets/images/side-icon/flag.png"
+                                    class="subitem-icons"> About</a>
+                            <a href="#skills" class="d-flex gap-4"><img src="assets/images/side-icon/angular.png"
+                                    class="subitem-icons"> Skills</a>
+                            <a href="#" class="d-flex gap-4"><img src="assets/images/side-icon/work.png"
+                                    class="subitem-icons"> Jobs</a>
+                            <a href="/projeect" class="d-flex gap-4" data-bs-toggle="modal"
+                                data-bs-target="#projectsModal">
+                                <img src="assets/images/side-icon/code.png" class="subitem-icons"> Projects
+                            </a>
+                            <a href="#uni" class="d-flex gap-4"><img src="assets/images/side-icon/university.png"
+                                    class="subitem-icons">Education</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links Section -->
+                <div class="accordion-item mt-3 mx-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#socialLinks">
+                            Social Links
+                        </button>
+                    </h2>
+
+                    <div id="socialLinks" class="accordion-collapse collapse show mt-3 p-2"
+                        data-bs-parent="#socialAccordion">
+                        <div class="accordion-body d-flex flex-column gap-2">
+                            <a href="https://www.linkedin.com/in/jainam-pokal-484413243/" class="d-flex gap-4"><img
+                                    src="assets/images/side-icon/linkedin.png" class="subitem-icons">
+                                LinkedIn
+                            </a>
+
+                            <a href="https://github.com/pokaljainam24" class="d-flex gap-4"><img
+                                    src="assets/images/side-icon/github.png" class="subitem-icons"> GitHub
+                            </a>
+
+                            <a href="https://www.instagram.com/jainam._.24____/?hl=en" class="d-flex gap-4"><i
+                                    class="bi bi-instagram fs-5"></i> Instagram
+                            </a>
+
+                            <a href="#" class="d-flex gap-4" data-bs-toggle="modal" data-bs-target="#phoneModal">
+                                <img src="assets/images/side-icon/phone.png" class="subitem-icons"> Contact Us
+                            </a>
+
+                            <a href="#" class="d-flex gap-4" data-bs-toggle="modal" data-bs-target="#emailModal">
+                                <img src="assets/images/side-icon/email.png" class="subitem-icons"> Subscribe
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Section -->
+        <div class="container" id="right-side-header">
+            <!-- Profile Image -->
+            <div class="profile-container" data-aos="fade-left">
+                <img src="/assets/images/My Profile.jpg" alt="AmirAli Rashidi Profile" class="my-image"
+                    data-bs-toggle="modal" data-bs-target="#profileModal" style="cursor: pointer;">
+            </div>
+
+            <div class="container mt-3" id="right-side-main">
+                <!-- About Section -->
+                <div id="about" for="about" class="row align-items-center" data-aos="flip-down">
+                    <div class="col-md-8">
+                        <h1 class="text-light" data-aos="fade-right" data-aos-delay="200">Jainam Pokal</h1>
+                        <p class="text-light" data-aos="fade-right" data-aos-delay="200">
+                            Motivated MERN Stack Developer with a strong foundation in MongoDB, Express.js, React, and
+                            Node.js. Passionate about building user-friendly web applications and continuously learning
+                            modern development practices.
+                        </p>
+                        <a href="/assets/images/Profile Resume.pdf" target="_blank">
+                            <button class="content-button" data-aos="fade-right" data-aos-delay="300">Download
+                                Resume</button>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center" data-aos="fade-left" data-aos-delay="300">
+                        <img style="border-radius: 50%;" src="/assets/images/profile.png" class="about-image">
+                    </div>
+                </div>
+
+                <!-- Skill Section -->
+                <div id="skills" for="skills" class="container">
+                    <h4 class="text-start text-light mb-4">My Skills</h4>
+                    <div class="row" data-aos="fade-up" data-aos-delay="200">
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/html.png" alt="HTML">
+                                <p class="mt-2">HTML</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/css.png" alt="CSS/SCSS">
+                                <p class="mt-2">CSS/SCSS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/javascript.png" alt="JavaScript">
+                                <p class="mt-2">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/Node.js.png" alt="TypeScript">
+                                <p class="mt-2">Node</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/MongoDB.png" alt="Angular">
+                                <p class="mt-2">MongoDB</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/react.png" alt="React">
+                                <p class="mt-2">React</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/git.png" alt="Git">
+                                <p class="mt-2">Git</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/Bootstrap.png" alt="Linux">
+                                <p class="mt-2">Bootstrap</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/jQuery.png" alt="Linux">
+                                <p class="mt-2">jQuery</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="text-center">
+                                <img class="img-fluid" src="/assets/images/skill-icons/C.png" alt="Linux">
+                                <p class="mt-2">C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Section -->
+                <h4 class="text-start text-light">My Projects</h4>
+                <div id="carouselExampleCaptions" class="carousel slide" for="projects">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- First Project -->
+                        <div class="carousel-item active">
+                            <video class="d-block w-100" height="500" autoplay loop muted>
+                                <source src="/assets/videos/movie-pr.mp4" type="video/mp4">
+                            </video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Movie Project 🎬</h3>
+                                <p>A full-stack movie project built with Node.js, Express, MongoDB, and EJS.</p>
+                                <p class="fs-4"><strong>Languages Used:</strong> JavaScript, Node.js, Express, MongoDB,
+                                    EJS</p>
+                                <a href="https://pr-6-movie-project.onrender.com/" class="btn" target="_blank">
+                                    <i class="bi bi-camera-reels-fill fs-1 text-warning"></i>
+                                </a>
+                                <a href="https://github.com/pokaljainam24/PR-6-Movie-Project?tab=readme-ov-file"
+                                    class="btn" target="_blank">
+                                    <i class="bi bi-github fs-1 text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Second Project -->
+                        <div class="carousel-item">
+                            <video class="d-block w-100" height="500" autoplay loop muted>
+                                <source src="/assets/images/projects-img/20250401-1951-48.0305424.mp4" type="video/mp4">
+                            </video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Apple Clone 🍎</h3>
+                                <p>This is a design-focused project built with the latest tools and techniques.</p>
+                                <p class="fs-4"><strong>Languages Used:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+                                <a href="https://fancy-eclair-a74f09.netlify.app/" class="btn" target="_blank">
+                                    <i class="bi bi-camera-reels-fill fs-1 text-warning"></i>
+                                </a>
+                                <a href="https://github.com/pokaljainam24/Bootstrap/tree/main/Apple-clone-Website"
+                                    class="btn" target="_blank">
+                                    <i class="bi bi-github fs-1 text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Third Project -->
+                        <div class="carousel-item">
+                            <img src="/assets/images/projects-img/399280278-d223ece2-e210-4e9a-902c-aa427ccb5cfe.png"
+                                class="d-block w-100 img-fluid" alt="Dog Breeds Image Viewer">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Dog Breeds Image Viewer 🐶</h3>
+                                <p>This project fetches and displays a list of dog breeds and their corresponding images
+                                    using the Dog CEO API.</p>
+                                <p class="fs-4"><strong>Languages Used:</strong> HTML, CSS, JavaScript</p>
+                                <a href="https://dog-api-admin-panel-827cf0.netlify.app/" class="btn" target="_blank">
+                                    <i class="bi bi-camera-reels-fill fs-1 text-warning"></i>
+                                </a>
+                                <a href="https://github.com/pokaljainam24/Doggo-Data?tab=readme-ov-file" class="btn"
+                                    target="_blank">
+                                    <i class="bi bi-github fs-1 text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- My Aducation Section -->
+                <h4 class="box-header text-light">My Educations</h4>
+                <div id="uni" class="box-container">
+                    <div class="main-uni">
+                        <div class="row">
+                            <div class="col-md-12 d-flex">
+                                <div class="uni-detail d-flex align-items-center gap-3">
+                                    <img src="/assets/images/r&w.png" class="items-logo me-3" alt="University Logo">
+                                    <div class="uni-items">
+                                        <p class="item-name">Master Course In Full-Stack Developement</p>
+                                        <p class="item-uni">Red & White Skill Education</p>
+                                    </div>
+                                </div>
+                                <p class="uni-date ms-auto">2025 Jun – completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="uni" class="box-container">
+                    <div class="main-uni">
+                        <div class="row">
+                            <div class="col-md-12 d-flex">
+                                <div class="uni-detail d-flex align-items-center gap-3">
+                                    <img src="/assets/images/gtu-uni.png" class="items-logo me-3" alt="University Logo">
+                                    <div class="uni-items">
+                                        <p class="item-name">Diploma of Computer Engineering</p>
+                                        <p class="item-uni">GTU College</p>
+                                    </div>
+                                </div>
+                                <p class="uni-date ms-auto">2021 Dis – Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="uni" class="box-container">
+                    <div class="main-uni">
+                        <div class="row">
+                            <div class="col-md-12 d-flex">
+                                <div class="uni-detail d-flex align-items-center gap-3">
+                                    <img src="/assets/images/NVS-Schoole.png" class="items-logo me-3"
+                                        alt="University Logo">
+                                    <div class="uni-items">
+                                        <p class="item-name">10th Board Examination</p>
+                                        <p class="item-uni">Navsari High School</p>
+                                    </div>
+                                </div>
+                                <p class="uni-date ms-auto">2018 Oct – Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact modal -->
+    <div class="modal bg-glass" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-light border border-secondary rounded-4 shadow-lg">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="phoneModalLabel">📞 Contact Us</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body rounded">
+                    <form action="/sendMail" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control text-dark border-0" id="name" name="name"
+                                placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control text-dark border-0" id="email" name="email"
+                                placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control text-dark border-0" id="message" name="message" rows="3"
+                                placeholder="Type your message" required></textarea>
+                        </div>
+
+                        <div class="modal-footer border-secondary">
+                            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border border-secondary rounded-4 shadow-lg">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="emailModalLabel">📧 Subscribe to Our Newsletter</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="/subscribe" method="POST">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Enter Your Email</label>
+                            <input type="email" class="form-control text-light border-0" id="email" name="email"
+                                required placeholder="Enter your email">
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Modal -->
+    <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="projectsModalLabel">My Projects</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <article>
+                        <!-- Project Card 1 -->
+                        <section class="card" style="margin-left: 150px !important;">
+                            <div class="text-content">
+                                <h3>Collect Meaningful Feedback from Your Users</h3>
+                                <p>Our Feedback Project helps you gather insights through user reviews and real-time
+                                    responses to improve your services and user experience.</p>
+                                <div class="btns d-flex gap-2">
+                                    <a href="https://github.com/pokaljainam24/React-Pr-4-FeedBack">Join now</a>
+                                    <a href="https://react-pr-4-feed-back-d8en.vercel.app/">View now</a>
+                                </div>
+                            </div>
+                            <div class="visual ">
+                                <video autoplay muted loop playsinline>
+                                    <source src="/assets/videos/Feedback-project.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </section>
+
+                        <!-- Project Card 2 -->
+                        <section class="card"
+                            style="display: flex; border: 1px solid #ccc; border-radius: 12px; overflow: hidden;">
+                            <div class="visual" style="flex: 1; max-width: 50%; height: 250px; margin-top: 30px;">
+                                <img src="/assets/images/projects-img/blog-pr.png" alt="Blog App"
+                                    style="width: 100%; height: 100%; object-fit: cover;  border-radius: 20px;">
+                            </div>
+                            <div class="text-content" style="flex: 1; padding: 20px; margin-left: 100px;">
+                                <h3>Jainam Vlogs - Blog Application</h3>
+                                <p>This is a blog application built with Node.js, Express, MongoDB, and EJS for
+                                    templating. It includes authentication features such as user registration and login.
+                                </p>
+                                <div class="btns d-flex gap-2" style="margin-top: 10px;">
+                                    <a href="https://github.com/pokaljainam24/passport-js" class="btn btn-light">Join
+                                        now</a>
+                                    <a href="https://passport-js-1ycf.onrender.com/home" class="btn btn-light">View
+                                        now</a>
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow overflow-hidden">
+                <div class="row g-0">
+                    <!-- Left: Profile Info -->
+                    <div class="col-md-7 p-5 left-section d-flex flex-column justify-content-center">
+                        <h2 class="fw-bold mb-1">Jainam Pokal</h2>
+                        <p class="text-muted mb-2"><i class="bi bi-briefcase-fill me-1"></i> Front-End Developer</p>
+                        <p class="text-muted mb-4"><i class="bi bi-geo-alt-fill me-1"></i> 25.0000° N, 71.0000° W</p>
+                        <p class="text-black mb-4">
+                            Passionate front-end developer with a focus on building interactive and beautiful user
+                            experiences.
+                        </p>
+                        <button class="btn btn-success px-4 py-2 rounded-pill w-50 mb-4">Get In Touch</button>
+                        <div class="social-icons d-flex gap-3 fs-4">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-dribbble"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Profile Image -->
+                    <div class="col-md-5 right-image d-flex align-items-stretch">
+                        <img src="/assets/images/My Profile.jpg" alt="Profile" class="img-fluid w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap SCRIPT CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- sweetalert cdn -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        document.querySelector('form[action="/sendMail"]').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const form = this;
+            const formData = new FormData(form);
+
+            const response = await fetch('/sendMail', {
+                method: 'POST',
+                body: new URLSearchParams(formData),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            });
+
+            setTimeout(() => {
+                swal("Success!", "Your message has been sent successfully!", "success");
+            }, 1000);
+
+            form.reset();
+        });
+
+        document.querySelector('form[action="/subscribe"]').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const form = this;
+            const formData = new FormData(form);
+
+            const response = await fetch('/subscribe', {
+                method: 'POST',
+                body: new URLSearchParams(formData),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            });
+
+            setTimeout(() => {
+                swal("Success!", "You have successfully subscribed!", "success");
+            }, 1000);
+
+            form.reset();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
