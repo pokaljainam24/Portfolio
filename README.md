@@ -6,13 +6,13 @@ Welcome to my **iMac-inspired developer portfolio**, created with **Node.js**, *
 
 ## 🌐 Live Demo
 
-🔗 [View Portfolio Live](https://my-new-portfolio-om3c.onrender.com)
+🔗 [View Portfolio Live](https://portfolio-ynob.onrender.com)
 
 ---
 
 ## 📸 Screenshot
 
-![iMac Portfolio Screenshot](https://github.com/user-attachments/assets/ebe4ab03-7096-4061-abd2-afbd5aab3cc8)
+![iMac Portfolio](https://github.com/user-attachments/assets/e71e4a86-8b95-496b-9da7-7bb8df2f2732)
 
 *Minimal, sleek iMac-style interface with a dock and interactive draggable windows.*
 
