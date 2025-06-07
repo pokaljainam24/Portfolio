@@ -12,7 +12,7 @@ Welcome to my **iMac-inspired developer portfolio**, created with **Node.js**, *
 
 ## 📸 Screenshot
 
-![iMac Portfolio Screenshot](![image](https://github.com/user-attachments/assets/e71e4a86-8b95-496b-9da7-7bb8df2f2732)
+![iMac Portfolio](https://github.com/user-attachments/assets/e71e4a86-8b95-496b-9da7-7bb8df2f2732)
 
 *Minimal, sleek iMac-style interface with a dock and interactive draggable windows.*
 
