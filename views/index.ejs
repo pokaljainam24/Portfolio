@@ -117,13 +117,13 @@
         <!-- Right Side Section -->
         <div class="container" id="right-side-header">
             <!-- Profile Image -->
-            <div class="profile-container" data-aos="fade-left">
+            <div class="profile-container d-flex align-items-center gap-2" data-aos="fade-left">
+                <strong class="text-light fs-4">Jainam Pokal</strong>
                 <img src="/assets/images/My Profile.jpg" alt="AmirAli Rashidi Profile" class="my-image"
                     data-bs-toggle="modal" data-bs-target="#profileModal" style="cursor: pointer;">
             </div>
 
             <div class="container mt-3" id="right-side-main">
-                <!-- About Section -->
                 <div id="about" for="about" class="row align-items-center" data-aos="flip-down">
                     <div class="col-md-8">
                         <h1 class="text-light" data-aos="fade-right" data-aos-delay="200">Jainam Pokal</h1>
@@ -354,14 +354,14 @@
     <!-- Contact modal -->
     <div class="modal bg-glass" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-light border border-secondary rounded-4 shadow-lg">
-                <div class="modal-header border-secondary">
+            <div class="modal-content text-light border border-secondary shadow-lg">
+                <div class="modal-header border-secondary" style="background-color: rgb(37,37,82);">
                     <h5 class="modal-title" id="phoneModalLabel">📞 Contact Us</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body rounded">
+                <div class="modal-body rounded-2">
                     <form action="/sendMail" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Name</label>
@@ -381,7 +381,7 @@
                                 placeholder="Type your message" required></textarea>
                         </div>
 
-                        <div class="modal-footer border-secondary">
+                        <div class="modal-footer border-secondary" style="background-color: rgb(37,37,82);">
                             <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-success">Send Message</button>
                         </div>
@@ -394,14 +394,14 @@
     <!-- Email Modal -->
     <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-dark text-light border border-secondary rounded-4 shadow-lg">
-                <div class="modal-header border-secondary">
+            <div class="modal-content text-light border border-secondary shadow-lg">
+                <div class="modal-header border-secondary" style="background-color: rgb(37,37,82);">
                     <h5 class="modal-title" id="emailModalLabel">📧 Subscribe to Our Newsletter</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
+                <div class="modal-body rounded-2">
                     <form action="/subscribe" method="POST">
                         <div class="mb-3">
                             <label for="email" class="form-label">Enter Your Email</label>
@@ -421,8 +421,8 @@
     <!-- Projects Modal -->
     <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content bg-dark text-white">
-                <div class="modal-header border-0">
+            <div class="modal-content text-white" style="background-color: rgb(37,37,82);">
+                <div class="modal-header border-1">
                     <h5 class="modal-title" id="projectsModalLabel">My Projects</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
@@ -468,6 +468,53 @@
                             </div>
                         </section>
 
+                        <!-- Project Card 3 -->
+                        <section class="card"
+                            style="display: flex; border: 1px solid #ccc; border-radius: 12px; overflow: hidden; margin-left: 150px !important;">
+                            <div class="visual" style="flex: 1; max-width: 50%; height: 250px; margin-top: 30px;">
+                                <img src="/assets/images/projects-img/croma.png" alt="Blog App"
+                                    style="width: 100%; height: 100%; object-fit: cover;  border-radius: 20px;">
+                            </div>
+                            <div class="text-content" style="flex: 1; padding: 20px;">
+                                <h3>Croma Clone</h3>
+                                <p>TA pixel‑perfect, responsive recreation of Croma’s e‑commerce storefront, crafted
+                                    with HTML5, Bootstrap 5, vanilla JavaScript, AOS scroll animations and
+                                    lovingly‑tuned custom CSS.
+                                </p>
+                                <div class="btns d-flex gap-2" style="margin-top: 10px;">
+                                    <a href="https://github.com/pokaljainam24/Croma-Clone/tree/main"
+                                        class="btn btn-light">Join
+                                        now</a>
+                                    <a href="https://croma-clone-9b6a46.netlify.app/" class="btn btn-light">View
+                                        now</a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Project Card 4 -->
+                        <section class="card"
+                            style="display: flex; border: 1px solid #ccc; border-radius: 12px; overflow: hidden;">
+                            <div class="visual" style="flex: 1; max-width: 50%; height: 300px; margin-top: 30px;">
+                                <img src="/assets/images/projects-img/corsera.png" alt="Blog App"
+                                    style="width: 100%; height: 100%; object-fit: fill;  border-radius: 20px;">
+                            </div>
+                            <div class="text-content" style="flex: 1; padding: 20px; margin-left: 100px;">
+                                <h3>CourseEra Clone</h3>
+                                <p>This project is a clone of Coursera, a popular online learning platform. The clone
+                                    replicates core features of Coursera, such as course browsing, enrollment, user
+                                    authentication, and video streaming. This project aims to provide a comprehensive
+                                    learning management system (LMS) for both students and instructors.
+                                </p>
+                                <div class="btns d-flex gap-2" style="margin-top: 10px;">
+                                    <a href="https://github.com/vrajgautam1/courseera-clone?tab=readme-ov-file"
+                                        class="btn btn-light">Join
+                                        now</a>
+                                    <a href="https://coursera-clone1.netlify.app/" class="btn btn-light">View
+                                        now</a>
+                                </div>
+                            </div>
+                        </section>
+
 
                     </article>
                 </div>
@@ -483,21 +530,17 @@
                     <!-- Left: Profile Info -->
                     <div class="col-md-7 p-5 left-section d-flex flex-column justify-content-center">
                         <h2 class="fw-bold mb-1">Jainam Pokal</h2>
-                        <p class="text-muted mb-2"><i class="bi bi-briefcase-fill me-1"></i> Front-End Developer</p>
-                        <p class="text-muted mb-4"><i class="bi bi-geo-alt-fill me-1"></i> 25.0000° N, 71.0000° W</p>
-                        <p class="text-black mb-4">
-                            Passionate front-end developer with a focus on building interactive and beautiful user
-                            experiences.
+                        <p class="text-light mb-2"><i class="bi bi-briefcase-fill me-1"></i> MERN Full-Stack Developer
                         </p>
-                        <button class="btn btn-success px-4 py-2 rounded-pill w-50 mb-4">Get In Touch</button>
-                        <div class="social-icons d-flex gap-3 fs-4">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-github"></i></a>
-                            <a href="#"><i class="bi bi-dribbble"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
-                        </div>
+                        <p class="text-light mb-3"><i class="bi bi-geo-alt-fill me-1"></i> 25.0000° N, 71.0000° W</p>
+                        <p class="text-light mb-3">
+                            MERN Full Stack Developer,<br>
+                            Passionate developer skilled in building interactive user experiences with React and robust
+                            back-end systems using Node.js, Express, and MongoDB.
+                        </p>
+                        <a href="tel:+919016883804" class="w-50 mb-3 text-decoration-none">
+                            <button class="btn btn-success px-4 py-2 rounded-pill w-100">Get In Touch</button>
+                        </a>
                     </div>
 
                     <!-- Right: Profile Image -->

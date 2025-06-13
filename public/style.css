@@ -359,10 +359,8 @@ video {
     align-items: center;
 }
 
-.modal-header,
-.modal-body,
-.modal-footer {
-    background: url(./assets/videos/background.png) !important;
+.modal-body {
+    background: url(./assets/videos/background.png);
     background-blend-mode: darken !important;
     background-position: center;
     background-size: cover;
@@ -516,26 +514,13 @@ section.card {
 }
 
 .modal .left-section {
-    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
-}
-
-.modal .social-icons a {
-    color: #ffffff;
-    transition: 0.3s;
-}
-
-.modal .social-icons a:hover {
-    color: #000000;
-    transform: scale(1.2);
-}
-
-.modal .btn-success {
-    background-color: #0d6efd;
-    border: none;
+    background-color: rgb(37, 37, 82);
+    color: cornsilk;
 }
 
 .modal .btn-success:hover {
-    background-color: #084ec1;
+    background-color: #39ffac;
+    color: #000000;
 }
 
 .modal .right-image img {
